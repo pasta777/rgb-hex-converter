@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
+body {
+    font-family: 'Inconsolata', monospace;
+}
+#convertBox {
+    background-color: black;
+    color: white;
+    width: 800px;
+    min-height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Inconsolata', monospace;
+}
+#convertBox span, #inputColor, #convertButton {
+    margin-top: 120px;
+    font-size: 26px;
+    font-family: 'Inconsolata', monospace;
+}
+#convertBox span {
+    margin-right: 10px;
+}
+#inputColor {
+    width: 200px;
+    background-color: transparent;
+    border: 2px solid white;
+    outline: 0;
+    color: white;
+}
+#convertButton {
+    background-color: transparent;
+    outline: 0;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+}
+#convertButton:hover {
+    background-color: white;
+    border-color: black;
+    color: black;
+}
+#exportColor {
+    font-size: 32px;
+}
