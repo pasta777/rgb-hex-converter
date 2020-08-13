@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
 body {
     font-family: 'Inconsolata', monospace;
+    margin: 0;
+    box-sizing: content-box;
 }
 #convertBox {
     background-color: black;
     color: white;
-    width: 800px;
-    min-height: 400px;
+    max-width: 800px;
+    min-height: 250px;
+    padding: 50px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -14,13 +17,9 @@ body {
     text-align: center;
     font-family: 'Inconsolata', monospace;
 }
-#convertBox span, #inputColor, #convertButton {
-    margin-top: 120px;
+#colorText, #inputColor, #convertButton {
     font-size: 26px;
     font-family: 'Inconsolata', monospace;
-}
-#convertBox span {
-    margin-right: 10px;
 }
 #inputColor {
     width: 200px;
@@ -43,4 +42,16 @@ body {
 }
 #exportColor {
     font-size: 32px;
+}
+@media only screen and (max-width: 845px) {
+    #convertBox {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+@media only screen and (max-width: 320px) {
+    #convertButton {
+        margin-top: 10px;
+    }
 }
